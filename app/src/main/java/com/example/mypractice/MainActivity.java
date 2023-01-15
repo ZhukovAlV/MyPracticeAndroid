@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         myButton = findViewById(R.id.myButton);
         myButton.setOnClickListener(e -> {
             Intent intent = new Intent(this, MainActivity2.class);
+            intent.putExtra("text", "Молодец");
             startActivity(intent);
         });
     }
